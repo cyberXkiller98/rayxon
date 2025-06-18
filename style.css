@@ -1,0 +1,203 @@
+/* ====== Dark Themed Wedding Site CSS with Cute Font ====== */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+header {
+  background-color: #2a2a2a;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.lang-switch button {
+  margin: 5px;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.lang-switch button:hover {
+  background: #ff85c1;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav a:hover {
+  color: #ff85c1;
+  text-decoration: none;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #1f1f1f;
+}
+
+.hero-img {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.hero h2 a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-family: 'Pacifico', cursive;
+}
+
+.hero h2 a:hover {
+  text-decoration: none;
+}
+
+.countdown {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #ffb6c1;
+  font-family: 'Quicksand', sans-serif;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#story h2, #moments h2 {
+  color: #ff69b4;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.map-link:hover {
+  color: #ff85c1;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.moment-card {
+  background-color: #2b2b2b;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.moment-card h3 {
+  color: #ff85c1;
+  margin-top: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+.moment-card p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .countdown {
+    font-size: 20px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .moment-card {
+    margin: 20px 10px;
+  }
+}
+.sakura {
+  position: fixed;
+  top: -50px;
+  z-index: 1000;
+  pointer-events: none;
+  user-select: none;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://i.postimg.cc/9Q6YfNqx/petal.png'); /* или твоя картинка лепестка */
+  background-size: cover;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}

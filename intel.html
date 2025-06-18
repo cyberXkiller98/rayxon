@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burxoniddin & Rayxona Wedding</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="lang.js" defer></script>
+  <script src="countdown.js" defer></script>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    for (let i = 0; i < 30; i++) {
+      const petal = document.createElement("div");
+      petal.classList.add("sakura");
+      petal.style.left = `${Math.random() * 100}vw`;
+      petal.style.animationDuration = `${5 + Math.random() * 5}s`;
+      petal.style.animationDelay = `${Math.random() * 5}s`;
+      document.body.appendChild(petal);
+    }
+  });
+</script>
+<body>
+  <header>
+    <div class="lang-switch">
+      <button onclick="applyTranslations('en')">EN</button>
+      <button onclick="applyTranslations('ru')">RU</button>
+      <button onclick="applyTranslations('uz')">UZ</button>
+    </div>
+    <h1 data-i18n="headline">Burxoniddin & Rayxona</h1>
+    <nav>
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a href="#story" data-i18n="navStory">Our Story</a>
+      <a href="#moments" data-i18n="navMoments">Our Moments</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="photo_2025-06-18_21-43-17.jpg"
+         alt="Wedding Banner"
+         class="hero-img" />
+    <h2>
+      <a
+        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Burxoniddin+%26+Rayxona+Wedding&dates=20250706T150000Z/20250706T200000Z&details=Join+us+for+the+wedding+celebration!&location=Tashkent,+Uzbekistan"
+        target="_blank"
+        data-i18n="eventDate"
+      >
+        July 6, 2025 • Tashkent, Uzbekistan
+      </a>
+    </h2>
+    <p class="countdown">
+      <span id="days-count">25</span> <span data-i18n="countdownText">Days To Go!</span>
+    </p>
+  </section>
+
+  <section id="story">
+    <h2 data-i18n="navStory">Our Story</h2>
+    <p data-i18n="storyText">
+      Once upon a time in Tashkent, two hearts met and promised forever. Join us to celebrate their journey of love.
+    </p>
+    <p>
+      <a
+        href="https://www.google.com/maps?q=41.244976,69.283368"
+        target="_blank"
+        class="map-link"
+        data-i18n="locationLink"
+      >
+        📍 Elbrus
+      </a>
+    </p>
+  </section>
+
+  <section id="moments">
+    <h2 data-i18n="momentsTitle">Our Moments</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 data-i18n="moment1Date"></h3>
+          <p data-i18n="moment1Line1"></p>
+          <p data-i18n="moment1Line2"></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 data-i18n="moment2Date"></h3>
+          <p data-i18n="moment2Line1"></p>
+          <p data-i18n="moment2Line2"></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 data-i18n="moment3Date"></h3>
+          <p data-i18n="moment3Line1"></p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3 data-i18n="moment4Date"></h3>
+          <p data-i18n="moment4Line1"></p>
+          <p data-i18n="moment4Line2"></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p data-i18n="footer">© 2025 Burxoniddin & Rayxona. All rights reserved.</p>
+  </footer>
+</body>
+</html>
